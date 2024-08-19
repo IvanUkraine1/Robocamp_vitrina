@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Showcase</title>
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://kit.fontawesome.com/461fd1cc55.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="custom.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Стандартна вітрина</a></li>
+                <li><a href="interactiv.html">Інтерактивна вітрина</a></li>
+                <li><a href="#">Кастомна вітрина</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Кастомна вітрина</h2>
+
+    <main>
+        <div class="product add-product" id="add-product">
+            <div class="add-icon">+</div>
+        </div>
+
+        <div class="product">
+            <img src="img/1.jpg" alt="Product 1">
+            <div class="product-title">Неперевершена Людина-Павук. Том 1. Мій Особистий Ворог 1</div>
+            <aside>
+                Пітер Паркер все життя боровся заради кращого світу, проте його історія драматично закінчилася власною фатальною жертвою. Тепер заклятий ворог Пітера, Доктор Восьминіг, взяв під свій контроль його тіло, спогади і все його життя. Віднині Отто Октавіус — Людина-Павук! І він сповнений рішучості довести, що перевершує свого попередника в усіх відношеннях. Але його бойова посвята відбудеться, коли він зустрінеться віч-на-віч з новою зловісною шісткою!
+                <br>
+    
+                    Нова Людина-Павук у змові з Дж. Джоною Джеймсоном? Чи розкриє Карлі Купер особисту таємницю «павучка»? Плюс: Людина-Павук та Мері Джейн возз’єдналися! Повернення Стерв’ятника! І скільки ще людей має загинути, перш ніж Неперевершена Людина-Павук покінчить із суперзлодієм? Дізнайтеся, як Отто бореться з Різником, коли на кону стоять сотні життів!
+                </aside>
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/">Instagram <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/">Facebook <i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com/?lang=uk">X <i class="fa-brands fa-square-x-twitter"></i></a>
+    </footer>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Додати новий продукт</h2>
+            <form id="add-product-form">
+                <label for="product-title">Назва продукту:</label>
+                <input type="text" id="product-title" name="product-title" required>
+
+                <label for="product-description">Опис продукту:</label>
+                <textarea id="product-description" name="product-description" required></textarea>
+
+                <label for="product-image">Зображення продукту:</label>
+                <input type="file" id="product-image" name="product-image" accept="image/*" required>
+
+                <button type="submit">Додати продукт</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
